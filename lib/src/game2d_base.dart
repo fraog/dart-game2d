@@ -12,7 +12,8 @@ class Game {
   static Timer timer;
 
   static void start() {
-    if (timer != null) return;
+    print("checking timer.");
+    //if (timer != null) return;
     print("starting game loop.");
     timer = new Timer.periodic(updateInterval, Game.update);
   }
