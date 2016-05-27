@@ -1,21 +1,24 @@
 // Copyright (c) 2016, <your name>. All rights reserved. Use of this source code
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
-import 'dart:math';
+import 'dart:async';
 
+class Game {
 
-class Vector2D {
+  static double startTime;
+  static double gameTicks;
 
-  num x;
-  num y;
+  static Timer timer;
 
-  Vector2D(num x, num y) {
-    this.x = x;
-    this.y = y;
+  static void start() {
+    if (timer != null) return;
+    timer = new Timer.periodic(40, Game.update);
   }
 
-}
+  static void update() {
+      //Do stuff, update all game entities.
+      gameTicks++;
+      print("ticks:"+gameTicks);
+  }
 
-num magnitude(num x, num y) {
-  return sqrt(x*x + y*y);
 }

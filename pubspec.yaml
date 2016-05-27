@@ -1,5 +1,5 @@
-name: vector2d
-description: A starting point for Dart libraries or applications.
+name: game2d
+description: games in 2d
 version: 0.0.1
 #author: Your Name <email@example.com>
 #homepage: https://www.example.com
@@ -12,3 +12,5 @@ environment:
 
 dev_dependencies:
   test: '>=0.12.0 <0.13.0'
+  rigidbody2d:
+    git: git://github.com/fraog/dart-rigidbody2d.git

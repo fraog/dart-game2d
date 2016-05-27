@@ -6,6 +6,6 @@
 /// More dartdocs go here.
 library vector2d;
 
-export 'src/vector2d_base.dart';
-
+export 'src/game2d_base.dart';
+export 'src/game2d_entity.dart';
 // TODO: Export any libraries intended for clients of this package.
