@@ -4,8 +4,10 @@
 /// Support for doing something awesome.
 ///
 /// More dartdocs go here.
-library vector2d;
+library game2d;
 
 export 'src/game2d_base.dart';
 export 'src/game2d_entity.dart';
-// TODO: Export any libraries intended for clients of this package.
+export 'src/game2d_physics.dart';
+export 'src/game2d_graphic.dart';
+export 'src/game2d_graphic_rect.dart';

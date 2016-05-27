@@ -2,18 +2,18 @@
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 import 'dart:async';
+import 'package:game2d/game2d.dart';
 
 class Game {
 
   static double startTime;
-  static double gameTicks;
+  static num gameTicks = 0;
 
   static Duration updateInterval = new Duration(milliseconds: 100);
   static Timer timer;
 
   static void start() {
-    print("checking timer.");
-    //if (timer != null) return;
+    if (timer != null) return;
     print("starting game loop.");
     timer = new Timer.periodic(updateInterval, Game.update);
   }
@@ -21,8 +21,15 @@ class Game {
   static void update(Timer t) {
       //Do stuff, update all game entities.
       gameTicks++;
-      //print("ticks:"+gameTicks);
-      print("boop");
+
+      for (Entity entity in Entity.Cache.values) {
+        if (entity.rigidbody != null) {
+          Physics.update(entity.rigidbody);
+        }
+      }
+
+      
+
   }
 
 }

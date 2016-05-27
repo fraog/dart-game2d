@@ -7,7 +7,7 @@ class Entity {
   static HashMap<String, Entity> Cache = new HashMap<String, Entity>();
 
   String name;
-  RigidBody2D rigidbody;
+  RigidBody2D rigidbody = null;
 
   Entity(String name) {
     int count = 0;
@@ -17,11 +17,4 @@ class Entity {
     this.name = name;
     Cache[name] = this;
   }
-
-
-
-
-
-
-
 }

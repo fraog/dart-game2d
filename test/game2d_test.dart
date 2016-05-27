@@ -5,4 +5,7 @@ import 'package:game2d/game2d.dart';
 import 'package:test/test.dart';
 
 void main() {
+  Entity e = new Entity("entity");
+  Game.start();
+
 }
