@@ -8,14 +8,16 @@ class Game {
   static double startTime;
   static double gameTicks;
 
+  static Duration updateInterval = new Duration(milliseconds: 100);
   static Timer timer;
 
   static void start() {
     if (timer != null) return;
-    timer = new Timer.periodic(40, Game.update);
+    print("starting game loop.");
+    timer = new Timer.periodic(updateInterval, Game.update);
   }
 
-  static void update() {
+  static void update(Timer t) {
       //Do stuff, update all game entities.
       gameTicks++;
       print("ticks:"+gameTicks);
