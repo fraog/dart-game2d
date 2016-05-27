@@ -1,5 +1,5 @@
 import 'dart:html';
-import 'package:rect2d/rigidbody2d.dart';
+import 'package:rigidbody2d/rigidbody2d.dart';
 import 'package:game2d/game2d.dart';
 
 class GraphicRigidBody implements Graphic {
