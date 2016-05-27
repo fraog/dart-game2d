@@ -20,7 +20,8 @@ class Game {
   static void update(Timer t) {
       //Do stuff, update all game entities.
       gameTicks++;
-      print("ticks:"+gameTicks);
+      //print("ticks:"+gameTicks);
+      print("boop");
   }
 
 }
