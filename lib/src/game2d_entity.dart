@@ -1,5 +1,5 @@
-
 import 'dart:collection';
+import 'package:game2d/game2d.dart';
 import 'package:rigidbody2d/rigidbody2d.dart';
 
 class Entity {
@@ -8,6 +8,7 @@ class Entity {
 
   String name;
   RigidBody2D rigidbody = null;
+  Graphic graphic = null;
 
   Entity(String name) {
     int count = 0;

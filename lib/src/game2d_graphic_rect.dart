@@ -10,7 +10,7 @@ class GraphicRect implements Graphic {
 
   draw(CanvasRenderingContext2D ctx) {
     ctx.translate(this.rect.x, this.rect.y);
-    //ctx.rotate(this.rect.angle);
     ctx.strokeRect(this.rect.left, this.rect.top, this.rect.w, this.rect.h);
+    ctx.translate(-this.rect.x, -this.rect.y);
   }
 }

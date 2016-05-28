@@ -9,6 +9,7 @@ library game2d;
 export 'src/game2d_base.dart';
 export 'src/game2d_entity.dart';
 export 'src/game2d_physics.dart';
+export 'src/game2d_renderer.dart';
 export 'src/game2d_graphic.dart';
 export 'src/game2d_graphic_rect.dart';
 export 'src/game2d_graphic_rigidbody.dart';

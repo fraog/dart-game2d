@@ -11,6 +11,8 @@ class GraphicRigidBody implements Graphic {
   draw(CanvasRenderingContext2D ctx) {
     ctx.translate(this.body.x, this.body.y);
     ctx.rotate(this.body.rotation);
-    ctx.strokeRect(this.body.left, this.body.top, this.body.w, this.body.h);
+    ctx.strokeRect(-this.body.hw, -this.body.hh, this.body.w, this.body.h);
+    ctx.rotate(-this.body.rotation);
+    ctx.translate(-this.body.x, -this.body.y);
   }
 }
