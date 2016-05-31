@@ -1,8 +1,8 @@
 # Files and directories created by pub
-# .packages
+.packages
 .pub/
-# build/
-# packages
+build/
+packages
 pubspec.lock
 
 # Files created by dart2js
@@ -14,7 +14,7 @@ pubspec.lock
 
 # Directory created by dartdoc
 # doc/api/
-packages/
+# packages/
 
 # JetBrains IDEs
 .idea/
