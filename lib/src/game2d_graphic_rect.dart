@@ -1,5 +1,5 @@
 import 'dart:html';
-import 'package:rect2d/rect2d.dart';
+import 'package:physics2d/physics2d.dart';
 import 'package:game2d/game2d.dart';
 
 class GraphicRect implements Graphic {

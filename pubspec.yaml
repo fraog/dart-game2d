@@ -12,16 +12,21 @@ environment:
 
 dev_dependencies:
   test: '>=0.12.0 <0.13.0'
-  rigidbody2d:
-    git: git://github.com/fraog/dart-rigidbody2d.git
-  rect2d:
-    git: git://github.com/fraog/dart-rect2d.git
-  vector2d:
-    git: git://github.com/fraog/dart-vector2d.git
+  #rigidbody2d:
+  #  git: git://github.com/fraog/dart-rigidbody2d.git
+  #rect2d:
+  #  git: git://github.com/fraog/dart-rect2d.git
+  #vector2d:
+  #  git: git://github.com/fraog/dart-vector2d.git
+  physics2d:
+    git: git://github.com/fraog/dart-physics2d.git
+
 dependency_overrides:
-  rigidbody2d:
-    path: ../rigidbody2d/
-  rect2d:
-    path: ../rect2d/
-  vector2d:
-    path: ../vector2d/
+  physics2d:
+    path: ../physics2d/
+  #rigidbody2d:
+  #  path: ../rigidbody2d/
+  #rect2d:
+  #  path: ../rect2d/
+  #vector2d:
+  #  path: ../vector2d/
