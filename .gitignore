@@ -2,7 +2,7 @@
 # .packages
 .pub/
 # build/
-packages
+# packages
 pubspec.lock
 
 # Files created by dart2js
