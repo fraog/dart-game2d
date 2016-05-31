@@ -1,5 +1,5 @@
 # Files and directories created by pub
-.packages
+# .packages
 .pub/
 # build/
 packages
@@ -14,6 +14,7 @@ pubspec.lock
 
 # Directory created by dartdoc
 # doc/api/
+packages/
 
 # JetBrains IDEs
 .idea/
